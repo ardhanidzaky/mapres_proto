@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ghf-us_*fak+n$jy5rsjin4ln=8ervsru#qzgx4a%5wzimsx!a
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
@@ -74,12 +74,7 @@ WSGI_APPLICATION = 'mapres_prototype.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+DATABASES = {}
 
 
 # Password validation
